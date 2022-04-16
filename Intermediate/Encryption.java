@@ -7,24 +7,24 @@ public class Encryption {
         inputStr = scan.nextLine();
 
         encryptedStr = encrypt(inputStr);
-        decryptedStr = decrypt(encryptedStr);
+        //decryptedStr = decrypt(encryptedStr);
 
         System.out.println("Encrypted message: " + encryptedStr);
-        System.out.println("Decrypted message: " + decryptedStr);
+        //System.out.println("Decrypted message: " + decryptedStr);
     }
 
     // Exam is fun becomes 5 4 4 7 Easfnxmiu
     private static String encrypt(String inputStr) {
         String output;
-        output = indexCount(inputStr) + " " + encryptEven(inputStr) + encryptOdd(inputStr);
-
+        output = indexCount(inputStr); //+ " " + encryptEven(inputStr) + encryptOdd(inputStr);
+        return output;
     }
     // Counts the number of even chars
     private static String indexCount(String inputStr) {
-        int evenCount, wsCount, oddCount;
+        int evenCount = 0, wsCount = 0, oddCount;
         String output, wsIndex = "";
         for (int idx = 0; idx < inputStr.length(); idx  = idx + 2) {
-            if (inputStr.charAt(idx) == " ") {
+            if (inputStr.charAt(idx) == ' ') {
                 wsCount++;
                 wsIndex += idx;
                 continue;
