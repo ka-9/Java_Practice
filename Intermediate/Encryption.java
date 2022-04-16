@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Encryption {
+    private static int wsCount, evenCount, oddCount;
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String inputStr, encryptedStr, decryptedStr;
@@ -18,22 +19,5 @@ public class Encryption {
         String output;
         output = indexCount(inputStr); //+ " " + encryptEven(inputStr) + encryptOdd(inputStr);
         return output;
-    }
-    // Counts the number of even chars
-    private static String indexCount(String inputStr) {
-        int evenCount = 0, wsCount = 0, oddCount;
-        String output, wsIndex = "";
-        for (int idx = 0; idx < inputStr.length(); idx  = idx + 2) {
-            if (inputStr.charAt(idx) == ' ') {
-                wsCount++;
-                wsIndex += idx;
-                continue;
-            }
-            evenCount++;
-        }
-        oddCount = inputStr.length() - wsCount - evenCount;
-
-        output = evenCount + " " + oddCount + " " + wsCount;
-        return output; 
     }
 }
