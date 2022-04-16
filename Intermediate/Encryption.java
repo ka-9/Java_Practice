@@ -16,18 +16,24 @@ public class Encryption {
     // Exam is fun becomes 5 4 4 7 Easfnxmiu
     private static String encrypt(String inputStr) {
         String output;
-        output = evenCount(inputStr) + " " + oddCount(inputStr) + " " + wsIndex(inputStr) + " " + encryptEven(inputStr) + encryptOdd(inputStr);
+        output = indexCount(inputStr) + " " + encryptEven(inputStr) + encryptOdd(inputStr);
 
     }
     // Counts the number of even chars
-    private static int evenCount(String inputStr) {
-        int count;
+    private static String indexCount(String inputStr) {
+        int evenCount, wsCount, oddCount;
+        String output, wsIndex = "";
         for (int idx = 0; idx < inputStr.length(); idx  = idx + 2) {
             if (inputStr.charAt(idx) == " ") {
+                wsCount++;
+                wsIndex += idx;
                 continue;
             }
-            count++;
+            evenCount++;
         }
-        return count; 
+        oddCount = inputStr.length() - wsCount - evenCount;
+
+        output = evenCount + " " + oddCount + " " + wsCount;
+        return output; 
     }
 }
