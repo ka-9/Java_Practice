@@ -31,4 +31,15 @@ public class Encryption {
         }
         return evenChars;
     }
+    private static String oddChars(String inputStr) {
+        String oddChars = "";
+        for (int idx = 0; idx < inputStr.length(); idx++) {
+            if (inputStr.charAt(idx) == ' ') {
+                continue;
+            }
+            oddCount++;
+            oddChars += inputStr.charAt(idx);
+        }
+        return oddChars;
+    }
 }
