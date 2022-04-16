@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class Encryption {
-    private static int wsCount, evenCount, oddCount;
+    private static int evenCount = 0, oddCount = 0;
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String inputStr, encryptedStr, decryptedStr;
-        System.out.println("Enetr S: ");
+        System.out.println("Enter S: ");
         inputStr = scan.nextLine();
 
         encryptedStr = encrypt(inputStr);
@@ -16,8 +16,7 @@ public class Encryption {
 
     // Exam is fun becomes 5 4 4 7 Easfnxmiu
     private static String encrypt(String inputStr) {
-        String output;
-        output = indexCount(inputStr); //+ " " + encryptEven(inputStr) + encryptOdd(inputStr);
-        return output;
+        Scanner scanS = new Scanner(inputStr);
+
     }
 }
