@@ -23,9 +23,6 @@ public class RomanToInt {
         int current;
         int next; 
 
-
-
-        //dont perform any operation until you check if the preceding number should have something subtarcted from it first
         for (int idx = 0; idx < s.length() -1; idx++) { // MCDLXXVI MCMXCIV MMCDXXV CDLI
             current = map.get(s.charAt(idx));
             next = map.get(s.charAt(idx + 1));
