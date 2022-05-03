@@ -1,3 +1,5 @@
+package Intermediate;
+
 import java.util.Scanner;
 public class PigLatinV2 {
     public static void main(String[] args) {
