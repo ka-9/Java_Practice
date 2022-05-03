@@ -13,21 +13,22 @@ public class PrimesApp{
 			System.out.println(val + " is not a prime number");
 		}
 	}
-}
 
-private static boolean isPrime(int val){
-	if (val <= 1) {
-		return false;
-	}
-
-	if (val ==2) {
-		return true;
-	}
-	double sqrtVal = Math.sqrt(val);
-
-	for (int divisor = 2; divisor <= sqrtVal; divisor++) {
-		if (val % divisor == 0) {
+	private static boolean isPrime(int val){
+		if (val <= 1) {
 			return false;
 		}
+
+		if (val ==2) {
+			return true;
+		}
+		double sqrtVal = Math.sqrt(val);
+
+		for (int divisor = 2; divisor <= sqrtVal; divisor++) {
+			if (val % divisor == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
