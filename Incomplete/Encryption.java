@@ -1,4 +1,4 @@
-package Intermediate;
+package Incomplete;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Encryption {
