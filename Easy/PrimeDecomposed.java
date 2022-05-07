@@ -11,7 +11,7 @@ public class PrimeDecomposed {
     }
     private static void primeDecompose(int n) {
         int exponent;
-        for(int div = 2; div*div < n; div++) {
+        for(int div = 2; div <= n; div++) { // or div * div <= n with below if else
             if(n % div == 0) {
                 exponent = 0;
                 while (n % div == 0) {
@@ -21,9 +21,10 @@ public class PrimeDecomposed {
                 System.out.print(div + "^" + exponent + " ");
             }
         }
-        if (n>1)
+        /*if (n>1)
             System.out.println(n + "^" + 1);
         else 
             System.out.println();
+        */
     } 
 }
