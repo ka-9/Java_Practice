@@ -10,6 +10,7 @@ public class Bits2HT {
     }
     private static void convert2HT(String inputStr) {
         if (inputStr.length() != 9) {
+            System.out.println("Invalid input length");
             return;
         }
         char[] arr = new char[9];
