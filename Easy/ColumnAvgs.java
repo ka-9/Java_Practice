@@ -19,6 +19,7 @@ public class ColumnAvgs {
         double[] avgs = new double[10];
         int sum = 0;
         for (int i = 0; i < 10; i++) {
+            sum = 0;
             for (int j = 0; j < 10; j++) {
                 sum += arr[j][i];
             }
