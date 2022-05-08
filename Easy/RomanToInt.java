@@ -7,6 +7,7 @@ public class RomanToInt {
         System.out.println("Enter a String to process: ");
         s = scanner.nextLine();
         System.out.println(romanToInt(s));
+        scanner.close();
     }
     public static int romanToInt(String s) {
         HashMap<Character, Integer> map = new HashMap<>();

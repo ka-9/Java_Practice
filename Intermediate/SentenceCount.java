@@ -10,19 +10,22 @@ public class SentenceCount {
         sentence = scan.nextLine();
 
         System.out.println(charCount(sentence));
+        scan.close();
     } 
 
     private static String charCount(String sentence) {
         String output = "";
+        String word;
         Scanner scanS = new Scanner(sentence);
         while (scanS.hasNext()) {
-            String word = scanS.next();
+            word = scanS.next();
             checkVow(word);
             checkDigit(word);
             wsCount++;
         }
         int consCount = sentence.length() - (wsCount - 1) - vowCount - digitCount;
         output = "The sentence is made up of: " + vowCount + " vowels, " + digitCount + " numbers, " + (wsCount-1) + " spaces and " +  consCount + " consonants.";
+        scanS.close();
         return (output);
     }
     

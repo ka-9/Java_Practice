@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 public class HeronFormula {
 	public static void main (String[] args) {
@@ -22,7 +21,7 @@ public class HeronFormula {
 		result = Math.sqrt(subResult);
 		System.out.println(result);
 		
-	
+		scan.close();
 		
 	}
 }

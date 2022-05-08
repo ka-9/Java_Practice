@@ -12,6 +12,7 @@ public class PrimesApp{
 		} else {
 			System.out.println(val + " is not a prime number");
 		}
+		scan.close();
 	}
 
 	private static boolean isPrime(int val){

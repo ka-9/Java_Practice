@@ -8,6 +8,7 @@ public class PerfectNumber {
         scanner.nextLine();
 
         checkPerfectNumber(n);
+        scanner.close();
     }
     private static void checkPerfectNumber(int n) {
         int sum;

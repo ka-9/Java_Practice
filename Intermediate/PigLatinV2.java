@@ -10,5 +10,6 @@ public class PigLatinV2 {
         inputStr = scan.nextLine();
 
         PigLatinTranslator.translate(inputStr);
+        scan.close();
     }
 }

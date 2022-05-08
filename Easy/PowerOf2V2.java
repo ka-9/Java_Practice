@@ -13,7 +13,7 @@ public class PowerOf2V2 {
         } else {
             System.out.println(val + " is not a power of 2.");
         }
-
+        scan.close();
     }
     
 }

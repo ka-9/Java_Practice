@@ -19,6 +19,6 @@ public class UniqueChar2 {
         } else {
             System.out.println(counter);
         }
-
+        scan.close();
     }
 }

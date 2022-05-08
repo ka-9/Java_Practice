@@ -18,7 +18,7 @@ public class PrintingStars {
             }
             System.out.println();
         }
-
+        scan.close();
     }
     
 }

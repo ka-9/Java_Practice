@@ -8,6 +8,7 @@ public class PrimeDecomposed {
         scan.nextLine();
 
         primeDecompose(n);
+        scan.close();
     }
     private static void primeDecompose(int n) {
         int exponent;

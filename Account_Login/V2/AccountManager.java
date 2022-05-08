@@ -6,8 +6,6 @@ package Account_Login.V2;
 // Insert try catchers
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
-
 public class AccountManager {
 	public static void main (String[] args) {
 
@@ -83,7 +81,7 @@ public class AccountManager {
 			passwordVerf = scan.nextLine();
 		}
 
-		Accounts account1 = new Accounts(firstName, lastName, age, accountNb, password);		
+		//Accounts account1 = new Accounts(firstName, lastName, age, accountNb, password);		
 
 		System.out.println("Congratulations, " + name + "! Your account has been successfully created. Welcome!");
 
@@ -136,5 +134,6 @@ public class AccountManager {
 				System.out.println ("Please enter a valid command.");
 			}
 		} 
+		scan.close();
 	}
 }

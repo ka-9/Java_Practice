@@ -7,6 +7,7 @@ public class MinMaxCharachter {
         System.out.println("Enter a string to process: ");
         inputStr = scan.nextLine();
         checkMinMax(inputStr);
+        scan.close();
     }
     private static void checkMinMax(String inputStr) {
         int occurrences = 0, maxOcc = 0, minOcc = inputStr.length();

@@ -8,6 +8,7 @@ public class IntToRoman2 {
         scan.nextLine();
 
         System.out.println(toRoman(n));
+        scan.close();
     }
     private static StringBuilder toRoman(int n) {
         StringBuilder output = new StringBuilder();

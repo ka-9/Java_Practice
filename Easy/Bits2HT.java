@@ -5,6 +5,7 @@ public class Bits2HT {
         String inputStr;
         System.out.println("Enter a 9 characters string of 0s and 1s: ");
         inputStr = scanner.nextLine();
+        scanner.close();
 
         convert2HT(inputStr);
     }

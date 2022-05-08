@@ -28,6 +28,7 @@ public class UniqueChars {
             }
         }
         System.out.println("Nb. of unique Chars: " + uniqueStr.length());
+        scan.close();
     }   
     
 }

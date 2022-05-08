@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.StringTokenizer;
 public class DiagonalPrinting {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -18,7 +17,8 @@ public class DiagonalPrinting {
                 padding += " ";
             }
         }
-      
+        scanL.close();
+        scan.close();
 
     }
     

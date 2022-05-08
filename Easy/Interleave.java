@@ -15,9 +15,8 @@ public class Interleave {
             arr2[i] = scanner.nextInt();
             scanner.nextLine();
         }
-
-
         interleave(arr1, arr2);
+        scanner.close();
     }
     private static void interleave(int[] arr1, int[] arr2) {
         int[] arr3 = new int[20];

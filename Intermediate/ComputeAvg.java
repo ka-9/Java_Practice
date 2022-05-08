@@ -19,5 +19,7 @@ public class ComputeAvg {
         }
         double avg = sum / (double) count;
         System.out.println(avg);
+        scan.close();
+        scanS.close();
     }
 }

@@ -13,6 +13,8 @@ public class DuplicateElimination {
             }
         }
         System.out.println(output);
+        scan.close();
     }
+    
     
 }

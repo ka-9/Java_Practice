@@ -9,5 +9,6 @@ public class Intruder {
             intruder ^= str.charAt(counter1);
         }
         System.out.println(intruder);
+        scan.close();
     }
 }

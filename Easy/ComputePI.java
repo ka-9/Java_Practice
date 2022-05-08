@@ -20,6 +20,7 @@ public class ComputePI {
         }
         System.out.println("Computed PI: " + 4*result);
         System.out.println("The difference with actual PI: " + Math.abs(Math.PI - 4*result));
+        scan.close();
     }
     
 }

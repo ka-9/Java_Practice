@@ -14,6 +14,8 @@ public class CharRepetition {
             System.out.println(inputStr + " has repeted characters");
         }
         System.out.println(palindromeCheck(inputStr));
+        
+        scan.close();
     }
 
 

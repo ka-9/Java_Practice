@@ -14,11 +14,7 @@ public static void main(String[] args){
 	secNb %= 60;
 
 	System.out.println("This time duration amounts to: " + hrNb + " hours, " + minNb + " minutes, and " + secNb + " seconds"); 
-
-	
-
-
-
+	scan.close();
 
 	}
 }

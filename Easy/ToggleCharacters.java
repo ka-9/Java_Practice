@@ -17,5 +17,6 @@ public class ToggleCharacters {
             output += currentChar;
         }
         System.out.println(output);
+        scan.close();
     }
 }

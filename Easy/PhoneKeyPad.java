@@ -7,6 +7,7 @@ public class PhoneKeyPad {
         inputStr = scanner.nextLine();
 
         toPhoneKeyPad(inputStr);
+        scanner.close();
     }
     private static void toPhoneKeyPad(String inputStr) {
         String str1 = inputStr.toLowerCase();

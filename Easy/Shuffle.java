@@ -6,10 +6,10 @@ public class Shuffle {
             arr[i] = i+1;
         }
         System.out.println("Before shuffle: " + Arrays.toString(arr));
-        Shuffle(arr);
+        Shuffles(arr);
         System.out.println("After shuffle: " + Arrays.toString(arr));
     }
-    private static void Shuffle(int[] arr) {
+    private static void Shuffles(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int rnd = (int) (Math.random()*(52-i) + i);
             int temp;

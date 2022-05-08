@@ -13,6 +13,7 @@ public class CountingCharacters {
             stringList[idx] = scan.nextLine();
         }
         checkETNOccurences(stringList);
+        scan.close();
     } 
 
     private static void checkETNOccurences (String[] stringList) {

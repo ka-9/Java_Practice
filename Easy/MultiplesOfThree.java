@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
-import java.io.*;
 public class MultiplesOfThree {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -10,6 +9,7 @@ public class MultiplesOfThree {
         inputStr = scan.nextLine();
 
         System.out.println(checkMultiplesOfThree(inputStr));
+        scan.close();
     }
     
     private static String checkMultiplesOfThree(String inputStr) {

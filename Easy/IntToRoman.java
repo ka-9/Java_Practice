@@ -12,6 +12,7 @@ public class IntToRoman {
         scan.nextLine();
 
         toRoman(n);
+        scan.close();
     }
     private static void toRoman(int n) {
         HashMap<Integer, Character> map = new HashMap<>();

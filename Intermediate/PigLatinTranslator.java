@@ -13,6 +13,7 @@ public class PigLatinTranslator {
             sentenceTranslated += translateWord(scanS.next()) + " ";
         }
         System.out.println(sentenceTranslated);
+        scanS.close();
     }
 
     private static String translateWord(String word) {

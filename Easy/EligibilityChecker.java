@@ -15,7 +15,7 @@ public class EligibilityChecker {
         System.out.println("Please enter your age: ");
         age = scan.nextInt();
         } while (age < 1 || age > 130);
-        
+        scan.close();
         return age;
     }
 

@@ -20,8 +20,7 @@ public class ClosestInt {
             nbs = scan.nextInt();
         }
         System.out.println("The closest number to " + target + " is " + closeNb);
-
-
+        scan.close();
         
     }
 }

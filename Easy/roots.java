@@ -19,5 +19,6 @@ public class roots {
 		double sol2 = (Math.sqrt(Math.pow(b, 2) - 4*a*c) + b)/(2*a);
 
 		System.out.println("Solution 1: " + fmt.format(sol1) + "; Solution 2: " + fmt.format(sol2));
+		scanner.close();
 	}
 }

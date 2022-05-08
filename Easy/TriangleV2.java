@@ -1,7 +1,6 @@
 public class TriangleV2 {
     public static void main(String[] args) {
         final int ROWS = 4;
-        final int COLS = 5;
         for (int idx1 = ROWS; idx1 > 0; idx1--) {
             for (int idx2 = 0; idx2 < idx1+1; idx2++) {
                 System.out.print("*");

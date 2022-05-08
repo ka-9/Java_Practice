@@ -6,21 +6,17 @@ package Account_Login.V1;
 // Insert try catchers
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class AccountManager {
 	public static void main (String[] args) {
 
 		boolean charStatus = false;
 		boolean numberStatus = false;
-		boolean noChar = false;
 		int charTrue = 0;
 		int numberTrue = 0;
-		int noCharTrue = 0;
 		String passwordVerf;
 
 		Scanner scan = new Scanner(System.in);
-		DecimalFormat accountNbFmt = new DecimalFormat ("0.########");
 
 		System.out.println("Hello, User. Let's start by creating an account." + "\n" + "Please enter your first name: ");
 		String firstName = scan.nextLine();
@@ -128,5 +124,6 @@ password.charAt(counter1) == '9');
 				System.out.println ("Please enter a valid command.");
 			}
 		} 
+		scan.close();
 	}
 }

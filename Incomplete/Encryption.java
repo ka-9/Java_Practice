@@ -1,18 +1,20 @@
 package Incomplete;
 import java.util.Scanner;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 public class Encryption {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String inputStr, encryptedStr, decryptedStr;
+        String inputStr, encryptedStr;
+        //String decryptedStr;
         System.out.println("Enter S: ");
         inputStr = scan.nextLine();
 
         encryptedStr = encrypt(inputStr);
-        decryptedStr = decrypt(encryptedStr);
+        //bug decryptedStr = decrypt(encryptedStr);
 
         System.out.println("Encrypted message: " + encryptedStr);
-        System.out.println("Decrypted message: " + decryptedStr);
+        //System.out.println("Decrypted message: " + decryptedStr);
+        scan.close();
     }
     //Encryption
     //Exam is fun becomes 5 4 4 7 Easfnxmiu
@@ -52,7 +54,8 @@ public class Encryption {
         }
         return wsIndex;
     }
-    //Decryption
+    //TODO: Continue the decryption process
+    /* Decryption
     private static String decrypt(String inputStr) {
         ArrayList<Integer> spaceIndexes = new ArrayList<>();
         Scanner scanS = new Scanner(inputStr);
@@ -64,7 +67,8 @@ public class Encryption {
         String evenChars = encryptedStr.substring(0, spaceIndexes.get(0));
         String oddChars = encryptedStr.substring(spaceIndexes.get(0));
         int totalNbOfChars = evenChars.length() + oddChars.length() + spaceIndexes.size() -2;
-        
+
+        scanS.close();
         return decryptedStr;
-    }
+    } */
 }
