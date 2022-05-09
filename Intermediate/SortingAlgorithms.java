@@ -1,12 +1,13 @@
+package Intermediate;
 import java.util.Arrays;
 public class SortingAlgorithms {
     public static void main(String[] args) {
         int[] arr = {1, 2, 1, 2, 4, 3, 0, 9, 7, 3, 5, 2, 1};
         System.out.println("Before sorting: " + Arrays.toString(arr));
         
-        //bubbleSort(arr);
-        //selectionSort(arr);
-        //insertionSort(arr);
+        bubbleSort(arr);
+        selectionSort(arr);
+        insertionSort(arr);
         countingSort(arr);
     } 
 
