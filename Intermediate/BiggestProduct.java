@@ -1,7 +1,7 @@
 package Intermediate;
 public class BiggestProduct extends CountingSortV3{
 
-    //$ The objective is to retur the largest product between two different numbers in an array of ints.
+    //$ The objective is to return the largest product between two different numbers in an array of ints.
     //$ The below method findBiggestProduct compares the product of the last 2 ints of the sorted
     //$ array and deduces the largest product
     public static void main(String[] args) {
