@@ -9,22 +9,20 @@ public class SecondSmallest {
 	public static void main(String[] args) {
         int[] arr = {1, 2, 5, 2, 4, 9};
         int secondSmallest = findSecondSmallest(arr);
-        if (secondSmallest != Integer.MAX_VALUE) {
-            System.out.println("Second smallest element: "  + secondSmallest);
-        } else {
-            System.out.println("Could not find second smallest element: ");
-        }
-    }	
+        if (secondSmallest != Integer.MAX_VALUE)
+            System.out.println(secondSmallest);
+        else
+            System.out.println("Could not find second smallest");
+    }
     private static int findSecondSmallest(int[] arr) {
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
-
-        for (int num : arr) {
-            if (num < smallest) {
+        for (int i : arr) {
+            if (i < smallest) {
                 secondSmallest = smallest;
-                smallest = num;
-            } else if (num < secondSmallest && num != smallest) {
-                secondSmallest = num;
+                smallest = i;
+            } else if (i < secondSmallest && i != smallest) {
+                secondSmallest = i;
             }
         }
         return secondSmallest;
