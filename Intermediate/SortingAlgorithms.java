@@ -13,7 +13,7 @@ public class SortingAlgorithms {
 
     private static void bubbleSort(int[] arr) { //feature The bigger values float to the top
         boolean isSorted = false;
-        int passes = 0;
+        int passes = 0; //! important
         while (!isSorted) {
             isSorted = true;
 
