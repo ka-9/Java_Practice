@@ -1,5 +1,3 @@
-package Intermediate;
-
 import java.util.Scanner;
 public class ClosestInt {
     public static void main(String args[]) {

@@ -1,5 +1,4 @@
 //! Important
-package Intermediate;
 import java.util.Arrays;
 public class CountingSortV3 {
     public static void main(String[] args) {

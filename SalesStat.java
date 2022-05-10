@@ -1,6 +1,4 @@
-package Intermediate;
-import java.util.Scanner;
-import java.io.*;
+import java.util.Scanner;import java.io.*;
 public class SalesStat {
     public static void main(String[] args) throws IOException {
         File f = new File("sales.txt");

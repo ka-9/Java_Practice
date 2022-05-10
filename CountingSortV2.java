@@ -1,5 +1,4 @@
 //! Very important
-package Intermediate;
 import java.util.Arrays;
 public class CountingSortV2 {
     public static void main(String[] args) {

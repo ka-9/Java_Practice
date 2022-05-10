@@ -1,4 +1,3 @@
-package Intermediate;
 public class BiggestProduct{
 
     //$ The objective is to return the largest product between two different numbers in an array of ints.

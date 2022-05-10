@@ -1,4 +1,3 @@
-package Intermediate;
 import java.util.Arrays;
 public class SortingAlgorithms {
     public static void main(String[] args) {

@@ -1,5 +1,3 @@
-package Intermediate;
-
 import java.util.Scanner;
 public class SentenceCount {
     private static int wsCount = 0, digitCount = 0, vowCount = 0;
