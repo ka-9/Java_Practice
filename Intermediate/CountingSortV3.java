@@ -11,7 +11,7 @@ public class CountingSortV3 {
     //TODO: Now working with negative values as well
     //$ changes made: introduced MIN_INT that prevents negative indexes while sorting
 
-    private static void countingSort(int[] arr) { //feature Efficient int sorting algorithm based on prefix sums
+    protected static int[] countingSort(int[] arr) { //feature Efficient int sorting algorithm based on prefix sums
         final int MAX_INT = findMaxInt(arr);
         final int MIN_INT = findMinInt(arr);
         final int LENGTH = (MAX_INT + MIN_INT) + 1;
@@ -35,10 +35,9 @@ public class CountingSortV3 {
             sortedIndex = counts[MIN_INT + element]; //this will then be the sorted index of the current element in the sorted array
             sorted[sortedIndex] = arr[idx]; 
         }
-        System.out.println("Using counting sort: " + Arrays.toString(sorted));
+        return sorted;
         
     }
-    
 
     private static int findMaxInt(int[] arr) { //feature supporting method to countingSort
         int max = Integer.MIN_VALUE;
