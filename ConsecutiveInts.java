@@ -1,3 +1,9 @@
+/*
+*Write a Java program that reads from the user an array of integer numbers and a
+*positive integer x, and then counts the number of times x identical numbers occur
+*next to each other in the array
+*/
+
 import java.util.Scanner;
 public class ConsecutiveInts{
     public static void main(String[] args) {
@@ -33,12 +39,8 @@ public class ConsecutiveInts{
 
         n = x;
         for (int i = 0; i < A.length-1; i++) {
-            if (A[i] == A[i+1]){
-                x--;
-            }
-            else {
-                x = n;
-            }
+            if (A[i] == A[i+1]) x--;
+            else x = n;
             if (x == 1) {
                 occurrences++;
                 x = n;
