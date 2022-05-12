@@ -9,7 +9,7 @@ public class StirlingApprox {
         n = scanner.nextInt();
         
         System.out.println("Using tradiitonal method: " + factorial(n));
-        System.out.println("Using Stirling's appoximation: " + StirlingApprox(n));
+        System.out.println("Using Stirling's appoximation: " + stirlingApprox(n));
         scanner.close();
     }
     private static int factorial(int n) {
@@ -17,7 +17,7 @@ public class StirlingApprox {
         for (int i = n-1; i > 0; i--) n*=i;
         return n;
     }
-    private static String StirlingApprox(int n) {
+    private static String stirlingApprox(int n) {
         DecimalFormat fmt = new DecimalFormat("0.##");
         double output = (Math.pow(n, n) * Math.sqrt(2*Math.PI*n))/Math.exp(n);
         String formatted = fmt.format(output);
