@@ -27,7 +27,7 @@ public class ReadingArray {
             B[i] = scanner.nextInt();
             scanner.nextLine();
 
-            while ((int) Math.abs(B[i] - A[i]) > 2) {
+            while (Math.abs(B[i] - A[i]) > 2) {
                 System.out.println("Difference between A[" + i + "] and B[" + i + "] is >2! Enter element B[" + i + "] again: ");
                 B[i] = scanner.nextInt();
                 scanner.nextLine();
